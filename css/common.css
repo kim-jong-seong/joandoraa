@@ -9,7 +9,7 @@ body { background: linear-gradient(180deg, #9ccaf0 0, #fff 100%) no-repeat; }
 #wrap { width: 960px; margin: 8px auto 0; border: 1px solid #e7e7e7;
         background: #fff; }
 /* 헤더 */
-#mainHeader { height: 279px; background: url(../images/bg_header.png) no-repeat; }
+#mainHeader { height: 279px; background: url(../images/bg_header.png) no-repeat center / cover; }
 #mainHeader h1 { padding: 20px 0 0 20px; color: #ff0;
                 font-size: 70px; }
 /* 메인메뉴 */
@@ -17,6 +17,7 @@ body { background: linear-gradient(180deg, #9ccaf0 0, #fff 100%) no-repeat; }
 #mainNav ul li { width: 25%; float: left; }
 #mainNav ul li a { display: block; text-align: center; line-height: 60px;
                   background: #006600; color: #fff; }
+
 /* 본문 */
 main { width: 740px; float: left; }
 #content { padding: 30px 20px; }
@@ -31,7 +32,7 @@ main { width: 740px; float: left; }
           background: #061f1f; color: #fff; }
 /* 600-1023 */
 @media all and ( max-width: 1023px ) {
-  #wrap { width: 580px; }
+  #wrap { width: 100%; margin: 0; border: 0;}
   main { width: auto; float: none; padding: 0 30px; }
   #sidebar { width: auto; float: none; }
   #sidebar img { width: 176px; }
@@ -40,9 +41,6 @@ main { width: 740px; float: left; }
 @media all and ( max-width: 599px ) {
   body {
     background: none;
-  }
-  #wrap {
-    width: 100%; margin: 0; border: 0;
   }
   #mainHeader {
     height: 75px;

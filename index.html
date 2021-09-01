@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>제주 요안도라 민박집</title>
     <link rel="stylesheet" href="css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -44,5 +45,11 @@
           <small>Copyright &copy; All rights reserved.</small>
       </footer>
     </div>
+    <script>
+      $("#mainNav").hide();
+      $("#mainHeader").on("click", function() {
+        $("#mainNav").slideToggle();
+      })
+    </script>
   </body>
 </html>
